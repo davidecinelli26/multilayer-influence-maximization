@@ -1,0 +1,39 @@
+# Data: downloaded again, not versioned
+data/raw/
+data/xml/
+data/cache/
+
+# Third-party code that cannot be redistributed.
+# EMCD is Copyright A. Tagarelli 2017; its terms of use explicitly forbid
+# redistribution. Download it from people.dimes.unical.it/andreatagarelli/emcd/
+# and cite it (Tagarelli, Amelio, Gullo, DAMI 31(5):1506-1543, 2017).
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Local by-products
+*.log
+anteprima_*.png
+comp_*.txt
+
+# LaTeX: compilation auxiliaries
+relazione/*.aux
+relazione/*.bbl
+relazione/*.blg
+relazione/*.out
+relazione/*.toc
+relazione/*.log
+relazione/*.synctex.gz
+relazione/*.nav
+relazione/*.snm
+relazione/*.vrb

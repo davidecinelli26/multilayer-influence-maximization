@@ -1,0 +1,22 @@
+# Rete e comunita'
+numpy>=1.26
+scipy>=1.11
+networkx>=3.3
+python-igraph>=0.11
+leidenalg>=0.10
+
+# Apprendimento
+torch>=2.0
+scikit-learn>=1.4
+
+# Lettura dei dump StackExchange
+py7zr>=0.20
+
+# Influence maximization competitiva (solo asnm/seeds/competitivo.py)
+netmax
+
+# Figure della relazione
+matplotlib>=3.8
+
+# Demo Streamlit (solo app/)
+streamlit>=1.30

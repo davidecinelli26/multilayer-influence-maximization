@@ -1,0 +1,35 @@
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[caratteristiche] grado          2 attributi  [1s]
+[caratteristiche] esposizione    4 attributi  [1s]
+[caratteristiche] comunita       4 attributi  [2s]
+[caratteristiche] spettro       32 attributi  [2s]
+[caratteristiche] popolazione 421,017 nodi non attivi al taglio, di cui 269,081 adottano (63.9%)
+[rr] gnn-uniforme seme 1: dalla cache (28.98 nodi per insieme)
+
+[im-pesata] k=10: 2000 simulazioni per strategia
+  TIM+ (alpha=1)                 punteggio    121.6  comunita'   4  gia' attivi fra i seed 10/10
+  TIM pesato da p_hat            punteggio    134.1  comunita'   5  gia' attivi fra i seed  5/10
+  TIM pesato + diversita' 0.80   punteggio    131.9  comunita'  10  gia' attivi fra i seed  5/10
+  grado uscente                  punteggio    119.9  comunita'   4  gia' attivi fra i seed 10/10
+
+BOOTSTRAP APPAIATO A GRAPPOLI SULL'ORA
+strategia                  punteggio differenza relativa        IC 95%             p  esito
+TIM+ (alpha=1)  (riferimento)     121.6      +0.0   +0.00%  [   +0.0,    +0.0]  1.000  equivalente
+TIM pesato da p_hat            134.1     +12.4  +10.23%  [   +7.4,   +18.2]  0.000  DIVERSA
+TIM pesato + diversita' 0.80     131.9     +10.3   +8.45%  [   +5.7,   +15.8]  0.000  DIVERSA
+grado uscente                  119.9      -1.8   -1.45%  [   -2.6,    -0.9]  0.000  DIVERSA
+
+CONTRO IL GRADO, direttamente
+strategia                  punteggio differenza relativa        IC 95%             p  esito
+grado uscente  (riferimento)     119.9      +0.0   +0.00%  [   +0.0,    +0.0]  1.000  equivalente
+TIM+ (alpha=1)                 121.6      +1.8   +1.47%  [   +0.9,    +2.6]  0.000  DIVERSA
+TIM pesato da p_hat            134.1     +14.2  +11.85%  [   +9.1,   +20.1]  0.000  DIVERSA
+TIM pesato + diversita' 0.80     131.9     +12.0  +10.05%  [   +7.4,   +17.6]  0.000  DIVERSA
+
+CONTROLLO alla trasmissivita' misurata (x4.55)
+strategia                  punteggio differenza relativa        IC 95%             p  esito
+TIM+ (alpha=1)  (riferimento)    1872.4      +0.0   +0.00%  [   +0.0,    +0.0]  1.000  equivalente
+TIM pesato da p_hat           1934.9     +62.5   +3.34%  [  +40.1,   +88.5]  0.000  DIVERSA
+TIM pesato + diversita' 0.80    1920.3     +47.9   +2.56%  [  +29.1,   +69.5]  0.000  DIVERSA
+grado uscente                 1891.1     +18.7   +1.00%  [   +7.0,   +31.8]  0.001  DIVERSA

@@ -1,0 +1,8 @@
+ fattore    p media    RR medio  regime
+    0.55    0.00083         1.3  quasi spento
+    1.00    0.00146        16.3  sottocritico
+    1.50    0.00216        83.0  critico
+    2.00    0.00286       145.0  critico
+    3.00    0.00426       336.5  sopracritico
+
+fattore scelto: 1.0 (cache aggiornata)

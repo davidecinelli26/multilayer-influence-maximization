@@ -1,0 +1,46 @@
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[caratteristiche] grado          2 attributi  [1s]
+[caratteristiche] esposizione    4 attributi  [2s]
+[caratteristiche] comunita       4 attributi  [3s]
+[caratteristiche] spettro       32 attributi  [3s]
+[caratteristiche] popolazione 421,017 nodi non attivi al taglio, di cui 269,081 adottano (63.9%)
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[adozione] divisione: 294,711 addestramento, 63,152 validazione, 63,154 test; base rate 0.639
+
+LA SCALA A PIOLI
+  gradino 'grado': 2 attributi
+    gradient boosting: 69 iterazioni, 4s
+  gradino 'esposizione': 6 attributi
+    gradient boosting: 162 iterazioni, 4s
+  gradino 'comunita': 10 attributi
+    gradient boosting: 199 iterazioni, 5s
+  gradino 'spettro': 42 attributi
+    gradient boosting: 149 iterazioni, 7s
+  gradino 'propagati': 126 attributi (x, A x, A^2 x), stessi alberi
+    gradient boosting: 112 iterazioni, 15s
+  gradino 'sign': stessi 126 attributi, MLP
+    SIGN seme 11: fermata all'epoca 46, AUC di validazione 0.6697, 92s
+    SIGN seme 707: fermata all'epoca 69, AUC di validazione 0.6694, 127s
+
+gradino                     AUC       AP
+grado                    0.6047   0.7204
+esposizione              0.6265   0.7378
+comunita                 0.6498   0.7534
+spettro                  0.6648   0.7632
+propagati                0.6735   0.7695
+sign                     0.6782   0.7733
+sign (seme b)            0.6786   0.7739
+
+BOOTSTRAP APPAIATO A GRAPPOLI SULLE COMUNITA' (2,000 repliche, Bonferroni su 5 confronti)
+     gradino                  AUC da   AUC a    diff.        IC 95%             p  esito
+       grado -> esposizione   0.6047  0.6265  +0.0217  [+0.0117, +0.0332]   0.000  MIGLIORE
+ esposizione -> comunita      0.6265  0.6498  +0.0234  [+0.0102, +0.0366]   0.000  MIGLIORE
+    comunita -> spettro       0.6498  0.6648  +0.0150  [+0.0091, +0.0242]   0.000  MIGLIORE
+     spettro -> propagati     0.6648  0.6735  +0.0088  [+0.0050, +0.0139]   0.000  MIGLIORE
+   propagati -> sign          0.6735  0.6782  +0.0047  [+0.0015, +0.0085]   0.006  MIGLIORE
+
+RUMORE DI RIFERIMENTO: SIGN contro se' stessa con un altro seme
+  differenza +0.0004  IC [-0.0021, +0.0023]  p=0.722
+  L'effetto propagati -> sign (+0.0047) supera il rumore fra semi.
+
+[adozione] fatto in 12 min

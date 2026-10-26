@@ -1,0 +1,28 @@
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[credit-higgs] 28,498 archi di follow con trasmissione osservata; 16,868 trasmissioni fuori dal grafo di follow (si ritwitta anche chi non si segue)  [4s]
+
+archi orientati 14,855,842: ricchi 28,498 (0.19%)
+  p sui ricchi: media 0.0522  mediana 0.0135  p99 0.2857  max 0.8276
+
+TARATURA DEL REGIME
+ fattore    p media    RR medio  regime
+    1.00    0.01359      2419.7  sopracritico
+    0.90    0.01223      1259.0  sopracritico
+    0.80    0.01087      1043.5  sopracritico
+    0.70    0.00951       317.9  sopracritico
+    0.65    0.00883       200.5  sopracritico
+    0.60    0.00815        95.7  critico
+    0.55    0.00747        25.7  sottocritico
+    0.50    0.00679         4.4  sottocritico
+    0.25    0.00340         1.2  quasi spento
+
+fattore scelto: 0.55.
+[attributi] 42 attributi per 456,627 nodi (10 strutturali + 32 spettrali), varianza spiegata 0.085  [26s]
+
+[gnn-higgs] loss uniforme: MSE 0.000222 (costante 0.001588), MSE hub 0.000273 (costante 0.001188), perdita in addestramento +88.6%, 275 epoche, 3901s
+[gnn-higgs] loss pesata : MSE 0.000261 (costante 0.001588), MSE hub 0.000278 (costante 0.001188), perdita in addestramento +83.2%, 240 epoche, 2818s
+
+La GNN batte la costante del 86% di MSE.
+La loss pesata NON migliora sugli hub (-2.1%): l'ipotesi e' respinta gia' sulla predizione.
+
+cache scritta in higgs_probabilita_72h.npz (434 MB)

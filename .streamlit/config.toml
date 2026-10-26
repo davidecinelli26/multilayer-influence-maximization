@@ -1,0 +1,16 @@
+# Tema fissato di proposito. La schermata si mostra a una commissione su una
+# macchina che non e' la nostra: lasciare che segua le preferenze del browser
+# significherebbe scoprire in aula che le figure sono testo scuro su fondo
+# scuro. Meglio un tema solo, e verificato.
+[theme]
+base = "light"
+primaryColor = "#0F6B63"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EFF1F0"
+textColor = "#14181A"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

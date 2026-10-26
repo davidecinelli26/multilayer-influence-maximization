@@ -1,0 +1,45 @@
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[caratteristiche] grado          2 attributi  [1s]
+[caratteristiche] esposizione    4 attributi  [2s]
+[caratteristiche] comunita       4 attributi  [3s]
+[caratteristiche] spettro       32 attributi  [3s]
+[caratteristiche] popolazione 421,017 nodi non attivi al taglio, di cui 269,081 adottano (63.9%)
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[relazionale] 10 blocchi x 42 attributi = 420 colonne  [11s]
+[relazionale] blocchi: x, in, out, in.in, in.out, out.in, out.out, in.RT, in.MT, in.RE
+
+  gradino 'propagati relazionali': 420 attributi, stessi alberi
+    gradient boosting: 109 iterazioni, 39s
+  gradino 'r-sign': stessi 420 attributi, un blocco di pesi per relazione
+    R-SIGN seme 11: fermata all'epoca 35, AUC di validazione 0.6713, 213s
+    R-SIGN seme 707: fermata all'epoca 34, AUC di validazione 0.6707, 206s
+
+gradino                         AUC       AP
+propagati                    0.6735   0.7695
+sign                         0.6782   0.7733
+propagati relazionali        0.6767   0.7723
+r-sign                       0.6795   0.7734
+r-sign (seme b)              0.6804   0.7737
+
+BOOTSTRAP APPAIATO A GRAPPOLI SULLE COMUNITA' (2,000 repliche, Bonferroni su 2 confronti)
+     gradino                  AUC da   AUC a    diff.        IC 95%             p  esito
+   propagati -> propagati relazionali  0.6735  0.6767  +0.0031  [+0.0012, +0.0052]   0.006  MIGLIORE
+        sign -> r-sign        0.6782  0.6795  +0.0013  [-0.0008, +0.0039]   0.218  equivalenti
+
+RUMORE DI RIFERIMENTO: R-SIGN contro se' stessa con un altro seme
+  differenza +0.0009  IC [-0.0007, +0.0026]  p=0.250
+  L'effetto sign -> r-sign (+0.0013) sta dentro il rumore fra semi: la struttura relazionale non aggiunge.
+
+PESO DEI BLOCCHI IN R-SIGN (norma di Frobenius di W_r)
+  x          3.287  #############
+  in         3.424  #############
+  out        3.514  ##############
+  in.in      3.521  ##############
+  in.out     3.585  ##############
+  out.in     3.367  #############
+  out.out    3.480  #############
+  in.RT      3.176  ############
+  in.MT      3.103  ############
+  in.RE      3.206  ############
+
+[relazionale] fatto in 15 min

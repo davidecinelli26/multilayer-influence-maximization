@@ -1,0 +1,24 @@
+[higgs] livelli letti dalla cache (higgs_livelli_72h.npz)
+[stazionarieta] archi-ora a rischio: 106,215,167 prima del taglio, 359,705,342 dopo
+  tasso di trasmissione per arco-ora, ore 0-71: 0.003298
+  tasso di trasmissione per arco-ora, ore 72-167: 0.014996
+
+  FATTORE DI NON STAZIONARIETA': 4.55x
+  La p stimata nel periodo calmo sottostima di 4.55 volte quella
+  del periodo da prevedere. Non e' un difetto della stima: e' che il
+  fenomeno cambia regime, e l'annuncio del CERN sta esattamente in mezzo.
+
+    ora     a rischio  trasmettono      tasso
+     12       458,577          359   0.000783
+     24       826,117          401   0.000485
+     36     1,146,881        4,323   0.003769
+     48     2,115,568        4,297   0.002031
+     60     2,680,188        9,460   0.003530
+     72     3,327,406        6,779   0.002037  <- taglio
+     84     4,813,019      191,506   0.039789
+     96     4,364,855       58,409   0.013382
+    108     3,976,592       64,808   0.016297
+    120     3,623,199       16,105   0.004445
+    132     3,478,943       28,323   0.008141
+    144     3,298,300       12,728   0.003859
+    156     3,210,581       12,954   0.004035
