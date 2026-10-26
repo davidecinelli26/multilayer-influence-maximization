@@ -7,7 +7,7 @@ Given a social network observed before a time boundary, the project answers two 
 - [Davide Cinelli](https://github.com/davidecinelli26)
 - [Giuseppe Cuiuri](https://github.com/GiuseppeCuiuri)
 
-Developed for the *Social Network and Media Analysis* course (Prof. Andrea Tagarelli), MSc in Computer Engineering, DIMES, University of Calabria, A.Y. 2025/2026.
+Developed for the *Social Network and Media Analysis* course, MSc in Computer Engineering, DIMES, University of Calabria, A.Y. 2025/2026.
 
 ## Overview
 
